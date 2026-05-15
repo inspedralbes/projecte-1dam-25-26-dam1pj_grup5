@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar incidència</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/logo-pedralbes.jpg" alt="Logo Institut Pedralbes" class="logo">
+    </header>
+
+    <main>
+        <h1>EDITAR INCIDÈNCIES</h1>
+
+        <form action="#" method="post">
+            <table class="taula-incidencies">
+                <tr>
+                    <th>ID</th>
+                    <th>Descripció</th>
+                    <th>Tipologia</th>
+                    <th>Prioritat</th>
+                    <th>Tècnic</th>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <input type="text" name="descripcio" value="Pantalla no funciona" required>
+                    </td>
+                    <td>
+                        <select name="tipologia" required>
+                            <option value="">Selecciona</option>
+                            <option value="XARXA">XARXA</option>
+                            <option value="HARDWARE">HARDWARE</option>
+                            <option value="SOFTWARE">SOFTWARE</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="prioritat" required>
+                            <option value="">Selecciona</option>
+                            <option value="Baixa">Baixa</option>
+                            <option value="Mitja">Mitja</option>
+                            <option value="Alta">Alta</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="tecnic" required>
+                            <option value="">Selecciona</option>
+                            <option value="Aimar">Aimar</option>
+                            <option value="Raul">Raul</option>
+                            <option value="Alves">Alves</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="botons-formulari">
+                <button type="submit" class="btn-custom btn-principal">GUARDAR</button>
+                <a href="llistat-incidencies.html" class="btn-custom btn-tornar">TORNAR</a>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
