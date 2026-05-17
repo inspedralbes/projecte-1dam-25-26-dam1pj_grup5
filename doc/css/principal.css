@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        to right,
+        #dff7f7 0%,
+        #bfeeee 12%,
+        #a8e7e7 20%,
+        #dff7f7 50%,
+        #a8e7e7 80%,
+        #bfeeee 88%,
+        #dff7f7 100%
+    );
+    color: #111;
+    min-height: 100vh;
+}
+
+.capcalera-principal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 30px;
+}
+
+.logo {
+    width: 180px;
+    display: block;
+}
+
+.projecte-dam {
+    font-size: 24px;
+    color: #111;
+    text-align: right;
+    margin-top: 8px;
+}
+
+.pantalla-principal,
+.contingut-principal {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.pantalla-principal h1,
+.contingut-principal h1 {
+    font-size: 72px;
+    margin-bottom: 1.5rem;
+    color: #111;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.pantalla-principal h2,
+.contingut-principal h2 {
+    font-size: 38px;
+    margin: 1.5rem 0 1rem;
+    color: #111;
+    font-weight: normal;
+}
+
+.pantalla-principal h3,
+.contingut-principal h3 {
+    margin: 1.5rem 0 0.5rem;
+    color: #1677d8;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.pantalla-principal p,
+.contingut-principal p,
+.contingut-principal li,
+form label {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+form {
+    max-width: 700px;
+    margin: 2rem auto 0 auto;
+    text-align: left;
+}
+
+form div {
+    margin-bottom: 1.3rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #666;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #111;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    transform: scale(1.2);
+    margin-top: 6px;
+}
+
+table {
+    width: 100%;
+    margin-top: 1.5rem;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+th,
+td {
+    border: 1px solid #444;
+    padding: 14px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+th {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.botons-rols,
+.botons-abaix {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.botons-rols a,
+.botons-abaix a,
+.botons-abaix button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    height: 90px;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 2px solid #222;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.btn-lila {
+    background-color: #9a17b8;
+    color: white;
+}
+
+.btn-verd {
+    background-color: #a7d800;
+    color: black;
+}
+
+.btn-turquesa {
+    background-color: #2fc9cc;
+    color: black;
+}
+
+.btn-blau {
+    background-color: #1677d8;
+    color: white;
+}
+
+.btn-vermell {
+    background-color: #d62828;
+    color: white;
+}
+
+a {
+    color: #1677d8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.texto-final {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .capcalera-principal {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        width: 75px;
+    }
+
+    .projecte-dam {
+        font-size: 18px;
+        max-width: 170px;
+        text-align: right;
+    }
+
+    .pantalla-principal,
+    .contingut-principal {
+        width: 92%;
+        padding: 1.2rem;
+    }
+
+    .pantalla-principal h1,
+    .contingut-principal h1 {
+        font-size: 46px;
+    }
+
+    .pantalla-principal h2,
+    .contingut-principal h2 {
+        font-size: 28px;
+    }
+
+    .pantalla-principal p,
+    .contingut-principal p,
+    .contingut-principal li,
+    form label {
+        font-size: 1rem;
+    }
+
+    .botons-rols a,
+    .botons-abaix a,
+    .botons-abaix button {
+        width: 100%;
+        max-width: 320px;
+        height: 75px;
+        font-size: 1.2rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

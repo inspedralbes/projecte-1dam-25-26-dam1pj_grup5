@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear incidència</title>
+    <link rel="stylesheet" href="css/principal.css">
+</head>
+<body>
+
+    <header class="capcalera-principal">
+        <div class="zona-logo">
+            <img src="img/logo-pedralbes.jpg" alt="Logo Institut Pedralbes" class="logo">
+        </div>
+
+        <div class="projecte-dam">
+            Projecte intermodular 1DAM
+        </div>
+    </header>
+
+    <main class="contingut-principal">
+        <h1>CREA LA TEVA INCIDÈNCIA</h1>
+
+        <form action="#" method="post">
+
+            <div>
+                <label for="departament">Departament:</label>
+                <input type="text" id="departament" name="departament" required>
+            </div>
+
+            <div>
+                <label for="prioritat">Prioritat:</label>
+                <select id="prioritat" name="prioritat" required>
+                    <option value="">Selecciona una prioritat</option>
+                    <option value="baixa">Baixa</option>
+                    <option value="mitja">Mitja</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="descripcio">Descripció de la incidència:</label>
+                <textarea id="descripcio" name="descripcio" rows="6" required></textarea>
+            </div>
+
+            <div class="botons-abaix">
+                <a href="principal.html" class="btn-blau">Tornar a l'inici</a>
+                <button type="submit" class="btn-verd">CREA LA TEVA INCIDÈNCIA</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>
